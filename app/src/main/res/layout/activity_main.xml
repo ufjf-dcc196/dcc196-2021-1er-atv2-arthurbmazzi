@@ -7,25 +7,62 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/titulo"
+        android:id="@+id/nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="Hoodwink"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="310dp"
-        android:layout_height="47dp"
+        android:id="@+id/titulo"
+        android:layout_width="365dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
         android:text="Herói do Dota 2 que prende seus inimigos em árvores"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="155dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="357dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotationX="1"
+            android:text="Sempre pronta quando alguém está a aprontar alguma, Hoodwink praticamente vive para combater tudo aquilo que ameaça a floresta assombrada que ela agora chama de casa. Armada com uma besta gigantesca e mesmo assim capaz de correr pelos bosques com a maior das facilidades, é quase impossível ficar de olho na Hoodwink durante uma luta. Basta piscar os olhos que ela aparece logo atrás de ti — e numa questão de segundos o teu corpo atordoado aparece pendurado numa das suas redes."
+            android:textSize="18sp" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
